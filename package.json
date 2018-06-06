@@ -6,13 +6,29 @@
   "dependencies": {
     "ejs": "^2.5.9",
     "express": "^4.16.3",
-    "strftime": "^0.10.0"
+    "strftime": "^0.10.0",
+    "weui": "^1.1.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router-dom": "^4.2.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^0.28.11",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^0.21.0",
+    "webpack": "^3.8.1",
+    "webpack-cli": "^2.1.4"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node index.js",
-    "build": "pm2 start process.json"
+    "dev": "node index.js webpack",
+    "build": "pm2 start process.json && webpack --progress --watch"
   },
   "author": "sunchzh",
   "license": "ISC"

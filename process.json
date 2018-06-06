@@ -3,7 +3,7 @@
     {
       "name" : "my-api",
       "script" : "./index.js",
-      "watch" : "../",
+      "watch" : "./static",
       "log_date_format" : "YYYY-MM-DD HH:mm Z"
     }
   ]
